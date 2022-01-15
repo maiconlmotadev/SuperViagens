@@ -16,14 +16,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FcL-31-tX1">
-                                <rect key="frame" x="0.0" y="33" width="414" height="863"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FcL-31-tX1">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FcL-31-tX1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="GgH-We-5SE"/>
+                            <constraint firstItem="FcL-31-tX1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Mqs-Cl-cI5"/>
+                            <constraint firstAttribute="bottom" secondItem="FcL-31-tX1" secondAttribute="bottom" id="SCG-Gk-SfZ"/>
+                            <constraint firstItem="FcL-31-tX1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UXE-IE-2Lz"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="FcL-31-tX1" secondAttribute="bottom" constant="-34" id="bDG-cw-2Yo"/>
+                            <constraint firstItem="FcL-31-tX1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="eIZ-VT-nwl"/>
+                            <constraint firstItem="FcL-31-tX1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qHI-9b-S2q"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="viagensTableView" destination="FcL-31-tX1" id="BYL-MI-5qb"/>
@@ -31,7 +39,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28.985507246376812" y="83.705357142857139"/>
+            <point key="canvasLocation" x="28.985507246376812" y="83.035714285714278"/>
         </scene>
     </scenes>
     <resources>

@@ -3,7 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -13,18 +13,81 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SUPER Viagens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOJ-a4-Zan">
-                    <rect key="frame" x="20" y="44" width="228" height="37"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="30"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9K6-0f-bIR" userLabel="Header View">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SUPER Viagens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOJ-a4-Zan">
+                            <rect key="frame" x="20" y="52" width="228" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="30"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemTealColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="250" id="89K-fF-qwS"/>
+                        <constraint firstAttribute="height" constant="250" id="o8u-vB-rjL"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j27-e7-8Ng" userLabel="Banner View">
+                    <rect key="frame" x="20" y="130" width="375" height="130"/>
+                    <subviews>
+                        <view alpha="0.40000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oCK-iC-Mjx">
+                            <rect key="frame" x="0.0" y="0.0" width="200" height="128"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" systemColor="systemBrownColor"/>
+                            <color key="tintColor" systemColor="systemGray5Color"/>
+                        </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A85-Aw-fGb">
+                            <rect key="frame" x="200" y="0.0" width="175" height="128"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="130" id="Bqh-17-5Hi"/>
+                    </constraints>
+                </view>
             </subviews>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="9K6-0f-bIR" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="0Qf-Ee-aER"/>
+                <constraint firstItem="9K6-0f-bIR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="BOz-V0-jVk"/>
+                <constraint firstItem="9K6-0f-bIR" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="DIR-D8-BW1"/>
+                <constraint firstItem="9K6-0f-bIR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="E5l-KR-r6n"/>
+                <constraint firstItem="j27-e7-8Ng" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="KAs-CU-VZp"/>
+                <constraint firstItem="9K6-0f-bIR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Prx-K7-zQg"/>
+                <constraint firstAttribute="trailing" secondItem="j27-e7-8Ng" secondAttribute="trailing" constant="19" id="WCQ-hW-aQM"/>
+                <constraint firstItem="9K6-0f-bIR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="c3B-6g-9JF"/>
+                <constraint firstItem="9K6-0f-bIR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cLG-w7-uGQ"/>
+                <constraint firstItem="9K6-0f-bIR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fWl-UB-3yc"/>
+                <constraint firstItem="9K6-0f-bIR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="myd-E0-Ax7"/>
+                <constraint firstItem="9K6-0f-bIR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oQO-a4-IDd"/>
+                <constraint firstItem="9K6-0f-bIR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rcd-h1-LLF"/>
+                <constraint firstItem="j27-e7-8Ng" firstAttribute="bottom" secondItem="9K6-0f-bIR" secondAttribute="bottom" constant="10" id="s9I-vc-eMQ"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bannerImageView" destination="A85-Aw-fGb" id="GBU-zQ-Qhy"/>
+                <outlet property="headerView" destination="9K6-0f-bIR" id="xPf-pu-qRI"/>
+                <outlet property="tituloLabel" destination="lOJ-a4-Zan" id="2bf-UG-gXT"/>
+            </connections>
             <point key="canvasLocation" x="-20.289855072463769" y="-56.25"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
