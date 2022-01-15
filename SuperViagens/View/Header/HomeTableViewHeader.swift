@@ -14,7 +14,15 @@ class HomeTableViewHeader: UIView {
     @IBOutlet var headerView: UIView!
     @IBOutlet var bannerImageView: UIImageView!
     
+    @IBOutlet var bannerView: UIView!
+    
     func configuraView() {
         headerView.backgroundColor = UIColor.systemTeal
+        
+        bannerView.layer.cornerRadius = 10
+        bannerView.layer.masksToBounds = true
+        
+        headerView.layer.cornerRadius = 500
+        headerView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
     }
 }

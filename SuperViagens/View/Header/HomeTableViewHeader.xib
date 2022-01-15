@@ -14,11 +14,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9K6-0f-bIR" userLabel="Header View">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                    <rect key="frame" x="-293" y="0.0" width="1000" height="250"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SUPER Viagens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOJ-a4-Zan">
-                            <rect key="frame" x="20" y="52" width="228" height="37"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUPER Viagens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOJ-a4-Zan">
+                            <rect key="frame" x="315" y="52" width="228" height="37"/>
                             <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="30"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
@@ -27,49 +26,78 @@
                     <color key="backgroundColor" systemColor="systemTealColor"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="250" id="89K-fF-qwS"/>
+                        <constraint firstItem="lOJ-a4-Zan" firstAttribute="top" secondItem="9K6-0f-bIR" secondAttribute="top" constant="52" id="LW3-Ye-vvO"/>
+                        <constraint firstAttribute="width" constant="1000" id="RSZ-DZ-nMR"/>
                         <constraint firstAttribute="height" constant="250" id="o8u-vB-rjL"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j27-e7-8Ng" userLabel="Banner View">
                     <rect key="frame" x="20" y="130" width="375" height="130"/>
                     <subviews>
-                        <view alpha="0.40000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oCK-iC-Mjx">
-                            <rect key="frame" x="0.0" y="0.0" width="200" height="128"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oCK-iC-Mjx">
+                            <rect key="frame" x="0.0" y="0.0" width="200" height="130"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Onde vai ser suas férias?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvs-43-cMf">
+                                    <rect key="frame" x="16" y="14" width="168" height="70.5"/>
+                                    <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="22"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ofertas e condições especiais, só aqui!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3s5-TF-CRn">
+                                    <rect key="frame" x="16" y="80" width="168" height="36"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
                             <color key="backgroundColor" systemColor="systemBrownColor"/>
                             <color key="tintColor" systemColor="systemGray5Color"/>
+                            <constraints>
+                                <constraint firstItem="3s5-TF-CRn" firstAttribute="leading" secondItem="oCK-iC-Mjx" secondAttribute="leading" constant="16" id="2pp-kT-NeE"/>
+                                <constraint firstItem="xvs-43-cMf" firstAttribute="leading" secondItem="oCK-iC-Mjx" secondAttribute="leading" constant="16" id="3fG-6h-93j"/>
+                                <constraint firstItem="xvs-43-cMf" firstAttribute="top" secondItem="oCK-iC-Mjx" secondAttribute="top" constant="14" id="95G-4e-zY9"/>
+                                <constraint firstAttribute="trailing" secondItem="xvs-43-cMf" secondAttribute="trailing" constant="16" id="PkR-MX-JX8"/>
+                                <constraint firstAttribute="bottom" secondItem="3s5-TF-CRn" secondAttribute="bottom" constant="14" id="gyQ-dG-KMT"/>
+                                <constraint firstAttribute="trailing" secondItem="3s5-TF-CRn" secondAttribute="trailing" constant="16" id="hKr-AR-gRW"/>
+                            </constraints>
                         </view>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A85-Aw-fGb">
-                            <rect key="frame" x="200" y="0.0" width="175" height="128"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ferias" translatesAutoresizingMaskIntoConstraints="NO" id="A85-Aw-fGb">
+                            <rect key="frame" x="200" y="0.0" width="175" height="130"/>
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
+                        <constraint firstItem="A85-Aw-fGb" firstAttribute="top" secondItem="j27-e7-8Ng" secondAttribute="top" id="3Bh-7C-axD"/>
                         <constraint firstAttribute="height" constant="130" id="Bqh-17-5Hi"/>
+                        <constraint firstItem="oCK-iC-Mjx" firstAttribute="top" secondItem="j27-e7-8Ng" secondAttribute="top" id="DBd-jL-Kg5"/>
+                        <constraint firstItem="A85-Aw-fGb" firstAttribute="width" secondItem="j27-e7-8Ng" secondAttribute="width" multiplier="0.466667" id="FZk-Wy-7KL"/>
+                        <constraint firstItem="oCK-iC-Mjx" firstAttribute="width" secondItem="j27-e7-8Ng" secondAttribute="width" multiplier="0.533333" id="Pft-fe-c7C"/>
+                        <constraint firstItem="oCK-iC-Mjx" firstAttribute="leading" secondItem="j27-e7-8Ng" secondAttribute="leading" id="WdF-Pv-DVT"/>
+                        <constraint firstAttribute="trailing" secondItem="A85-Aw-fGb" secondAttribute="trailing" id="YA3-aJ-Psp"/>
+                        <constraint firstAttribute="bottom" secondItem="A85-Aw-fGb" secondAttribute="bottom" id="mbu-gr-5eU"/>
+                        <constraint firstAttribute="bottom" secondItem="oCK-iC-Mjx" secondAttribute="bottom" id="q3W-Yt-ml1"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="9K6-0f-bIR" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="0Qf-Ee-aER"/>
                 <constraint firstItem="9K6-0f-bIR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="BOz-V0-jVk"/>
-                <constraint firstItem="9K6-0f-bIR" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="DIR-D8-BW1"/>
                 <constraint firstItem="9K6-0f-bIR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="E5l-KR-r6n"/>
                 <constraint firstItem="j27-e7-8Ng" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="KAs-CU-VZp"/>
                 <constraint firstItem="9K6-0f-bIR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Prx-K7-zQg"/>
                 <constraint firstAttribute="trailing" secondItem="j27-e7-8Ng" secondAttribute="trailing" constant="19" id="WCQ-hW-aQM"/>
+                <constraint firstItem="9K6-0f-bIR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Z8S-WA-WIN"/>
                 <constraint firstItem="9K6-0f-bIR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="c3B-6g-9JF"/>
                 <constraint firstItem="9K6-0f-bIR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cLG-w7-uGQ"/>
-                <constraint firstItem="9K6-0f-bIR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fWl-UB-3yc"/>
                 <constraint firstItem="9K6-0f-bIR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="myd-E0-Ax7"/>
                 <constraint firstItem="9K6-0f-bIR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oQO-a4-IDd"/>
-                <constraint firstItem="9K6-0f-bIR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rcd-h1-LLF"/>
                 <constraint firstItem="j27-e7-8Ng" firstAttribute="bottom" secondItem="9K6-0f-bIR" secondAttribute="bottom" constant="10" id="s9I-vc-eMQ"/>
+                <constraint firstItem="lOJ-a4-Zan" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="22" id="t1c-dw-Xrk"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="bannerImageView" destination="A85-Aw-fGb" id="GBU-zQ-Qhy"/>
+                <outlet property="bannerView" destination="j27-e7-8Ng" id="ofg-nh-2Op"/>
                 <outlet property="headerView" destination="9K6-0f-bIR" id="xPf-pu-qRI"/>
                 <outlet property="tituloLabel" destination="lOJ-a4-Zan" id="2bf-UG-gXT"/>
             </connections>
@@ -77,6 +105,7 @@
         </view>
     </objects>
     <resources>
+        <image name="ferias" width="988" height="1364"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
