@@ -37,8 +37,8 @@ class ViagemTableViewCell: UITableViewCell {
             diariaViagemLabel.text = "\(numeroDeDias) \(diarias) - \(numeroDeHospedes) \(hospedes)"
         }
         
+        
+        
     }
-    
-    
     
 }
